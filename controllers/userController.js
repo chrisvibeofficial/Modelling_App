@@ -102,7 +102,9 @@ exports.updateUser = async (req, res) => {
 
     const data = {
       fullName,
-      password
+      password,
+      profileImage,
+      catalogs
     }
 
     const catalogImages = user.catalogs.map((e) => { return `./images/${e}` });
